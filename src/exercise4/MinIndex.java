@@ -10,21 +10,23 @@ public class MinIndex {
           System.out.println("Enter size for array");
         int size = input.nextInt();
         int array[] = new int[size];
-        int min = 0;
+        double min =1000;
+        int inde = 0;
    
         System.out.println("Enter numbers");
 
         
         for (int i = 0 ; i < array.length; i++) {
           array[i] = input.nextInt();
-        if (min > array[i] ) {
-         min = i;
+        if ( min > array[i] ) {
+         min = array[i];
+         inde = i;
 
         }
 
         }
         
-    System.out.println("Min index: " + min);
+    System.out.println("Min index: " + inde);
 
 
         

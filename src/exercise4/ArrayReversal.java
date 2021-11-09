@@ -7,26 +7,24 @@ public class ArrayReversal {
 
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
+        System.out.println("Give size for array");
         int size = input.nextInt();
-        char ch[] = new char[size];
-        a[0] = 'F' ;
-        a[1] = 'D' ;
-        a[2] = 'I' ;
-        a[3] = 'B' ;
-        a[4] = 'A' ;
-        for (int i = 0; i = a.lenght; i--){
 
-
+        char a1[] = new char [size];
+        for (int i = 0; i < size; i++){
+        a1[i] = input.next().charAt(0);
         }
-      
 
+        int j = 0;
 
-        
+        char a2[] = new char [size];
+        for(int i = size - 1; i >= 0; i--){
+        a2[j] = a1[i];
+        j++;
+        }
 
-
-
-        String numbersAsString = Arrays.toString(a);
-        System.out.println("Reversed symbols" + numbersAsString);
+        String str = Arrays.toString(a2);
+        System.out.println("Reversed symbols" + str);
     }
 
 }
